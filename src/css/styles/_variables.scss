@@ -13,17 +13,17 @@ $rem-base-lrg: 18px; /*this is also the divisor for the mixin fontSize*/
 //fonts
 
 %regular {
-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 400;
 }
 %medium {
-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 500;
 }
 %bold {
-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 700;
 }
@@ -33,12 +33,12 @@ font-weight: 200;
 
 }
 %button {
-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 400;
 }
 %black {
-font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: 900;
 }

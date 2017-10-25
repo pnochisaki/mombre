@@ -13,10 +13,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png" />
     <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
-    <meta name="application-name" content="K+M Chocolate"/>
+    <meta name="application-name" content="{{site.name}}"/>
     <meta name="msapplication-TileColor" content="#DADADA" />
     <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6588132/7743172/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/css/all.css" />
     
   </head>
@@ -54,30 +53,6 @@
           {{/each}} {{/if}}
         </ul>
 
-        <div class="mobile-footer">
-        
-          <div class="newsletter" id="newsletter-3">
-            <div class="headline">Let us keep in touch with you</div>
-
-
-           <div class="append-to-me"></div>
-
-
-            <div class="social">
-              {{#if social}} {{#each social}}
-              <a target="_blank" href="{{this}}"><span class="icon-{{@key}}"></span><span class="accessibility">{{@key}}</span></a> {{/each}} {{/if}}
-            </div>
-          </div>
-
-          <div class="footer-links">
-            {{#if legal}} {{#each legal}}
-              <a class="h6 {{path}}" href="/{{path}}">{{title}}</a>
-            {{/each}} {{/if}}
-          </div>
-
-          <div class="copyright h6">{{site.copyright}}</div>
-
-        </div>
       </nav>
 
     </header>

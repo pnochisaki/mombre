@@ -212,24 +212,13 @@ gulp.task('metalsmith', function() {
 
 
         collections({
-          groups: {
+          posts: {
             sortBy: 'order',
-            pattern: '/groups/*.md'
+            pattern: '/posts/*.md'
           },
           pages: {
             sortBy: 'order'
-          },
-          legal: {
-            sortBy: 'order'
-          },
-          products: {
-            sortBy: 'order',
-            pattern: '/products/*.md'
-          },
-          people: {
-            sortBy: 'order',
-            pattern: '/people/*.md'
-          }          
+          }
         }),
 
         include({
@@ -240,39 +229,9 @@ gulp.task('metalsmith', function() {
 
         writemetadata({
           collections: {
-            groups: {
+            posts: {
               output: {
-                path: 'json-indexes/groups.json',
-                asObject: true,
-                metadata: {
-                  "type": "list"
-                }
-              },
-              ignorekeys: ['contents', 'next', 'previous', '_vinyl', 'stat', 'layout', 'collection']
-            },
-            products: {
-              output: {
-                path: 'json-indexes/products.json',
-                asObject: true,
-                metadata: {
-                  "type": "list"
-                }
-              },
-              ignorekeys: ['contents', 'next', 'previous', '_vinyl', 'stat', 'layout', 'collection']
-            },
-            people: {
-              output: {
-                path: 'json-indexes/people.json',
-                asObject: true,
-                metadata: {
-                  "type": "list"
-                }
-              },
-              ignorekeys: ['contents', 'next', 'previous', '_vinyl', 'stat', 'layout', 'collection']
-            },            
-            pages: {
-              output: {
-                path: 'json-indexes/pages.json',
+                path: 'json-indexes/posts.json',
                 asObject: true,
                 metadata: {
                   "type": "list"
@@ -286,12 +245,8 @@ gulp.task('metalsmith', function() {
         permalinks({
             pattern: ':title',
             linksets: [{
-                match: { collection: 'products' },
-                pattern: 'products/:title'
-            },
-            {
-                match: { collection: 'groups' },
-                pattern: 'product-groups/:title'
+                match: { collection: 'posts' },
+                pattern: 'posts/:title'
             }]            
         }),
 
@@ -311,7 +266,7 @@ gulp.task('jsonpages', function() {
   return gulp.src(
       [
         'src/content/pages/*.md',
-        'src/content/products/*.md'
+        'src/content/posts/*.md'
       ]
     )
     .pipe(metalsmith({
@@ -337,7 +292,7 @@ gulp.task('jsonindexes', function() {
         tojson({
             outputPath: 'json',
             createIndexes : true,
-            indexPaths : ['/products', '/pages', '/groups', '/people'],
+            indexPaths : ['/posts', '/pages'],
             onlyOutputIndex : true
         }),
       ]
@@ -352,10 +307,6 @@ gulp.task('imagemin', () =>
         .pipe(gulp.dest('build/content/media'))
 );
 
-gulp.task('htaccess', function() {
-  return gulp.src('src/.htaccess')
-    .pipe(gulp.dest('build/'));
-});
 
 gulp.task('clean', function () {
   return del('build/**');
@@ -363,8 +314,8 @@ gulp.task('clean', function () {
 
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('metalsmith', 'sass', 'concatJs', 'jsonindexes', 'jsonpages', 'imagemin', 'htaccess', 'serve', 'watch', 'watchjs')
+  gulp.start('metalsmith', 'sass', 'concatJs', 'jsonindexes', 'jsonpages', 'imagemin', 'serve', 'watch', 'watchjs')
   });
 gulp.task('build', ['clean'], function(){
-  gulp.start('metalsmith', 'sass', 'concatJs', 'jsonindexes', 'jsonpages', 'imagemin', 'htaccess')
+  gulp.start('metalsmith', 'sass', 'concatJs', 'jsonindexes', 'jsonpages', 'imagemin')
   });

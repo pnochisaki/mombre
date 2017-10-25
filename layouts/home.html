@@ -3,74 +3,21 @@
 
   <h1>{{title}}</h1>
 
-  <div class="header-image-container">
-    <div class="header-image" style="background-image:url({{imgL image1}})"></div>
-    <div class="header-mobile-image-stacked">
-      <img src="{{imgS mobileimage1}}" alt="Products">
-    </div>
-    <div class="header-text">
-      <div class="header-image-blurred" style="background-image:url({{imgL image1}})"></div> 
-      <div class="contents">
-        <div class="headline h1">{{{headline1}}}</div>
-        {{#if subheadline1}}
-        <div class="subheadline h2">{{{subheadline1}}}</div>
-        {{/if}}
-        <p class="p4">{{{teaser1}}}</p>
-      </div>
-    </div>
-    <button class="expander">
-      <img src="/images/plus.svg" alt="plus icon 1">
-      <span>Click to Expand</span>
-    </button>
-  </div>    
+  {{{contents}}}
 
-  <div class="header-image-container">
-    <div class="header-image" style="background-image:url({{imgL image2}})"></div>
-    <div class="header-mobile-image-stacked">
-      <img src="{{imgS mobileimage2}}" alt="Chocolate">
-    </div>
-    <div class="header-text">
-      <div class="header-image-blurred" style="background-image:url({{imgL image2}})"></div>            <div class="contents">
-        <div class="headline h1">{{{headline2}}}</div>
-        {{#if subheadline2}}
-          <div class="subheadline h2">{{subheadline2}}</div>
-        {{/if}}
-        <p class="p4">{{{teaser2}}}</p>
-      </div>
-    </div>
-    <button class="expander">
-      <img src="/images/plus.svg" alt="plus icon 2">
-      <span>Click to Expand</span>
-    </button>
-  </div>    
-
-  <div class="header-image-container open">
-    <div class="header-image" style="background-image:url({{imgL image3}})"></div>
-    <div class="header-mobile-image-stacked">
-      <img src="{{imgS mobileimage3}}" alt="Products">
-    </div>
-    {{#if pre-teaser3}}
-    <div class="pre-teaser h1">
-      {{{ pre-teaser3 }}}
-    </div>   
-    {{/if}} 
-    <div class="header-text">
-      <div class="header-image-blurred" style="background-image:url({{imgL image3}})"></div>            <div class="contents">
-        <div class="headline h1">{{headline3}}</div>
-        {{#if subheadline3}}        
-          <div class="subheadline h2">{{subheadline3}}</div>
-        {{/if}}
-        <p class="p1">{{{teaser3}}}</p>
-      </div>
-    </div>
-    <button class="expander">
-      <img src="/images/plus.svg" alt="plus icon">
-      <span>Click to Expand</span>
-    </button>
-  </div>    
-
-
-    {{{contents}}}
+  {{#if posts}}
+        {{#each posts}}
+        <article >
+            <div>
+            <img src="{{imgS image}}" alt="{{title}}">
+                <h3>{{title}}</h3>
+                {{{contents}}}
+                <a class="button" href="/{{path}}"><span>More Info</span></a>
+            </div>
+        </article>
+        {{/each}}
+    </section>
+    {{/if}}  
 
 </main>
 {{> footer}}
