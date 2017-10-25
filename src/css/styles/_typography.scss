@@ -1,0 +1,126 @@
+
+%icomoon {
+  &:before {
+
+  font-family:  'icomoon' !important;
+  speak:  none;
+  font-style:  normal;
+  font-weight:  normal;
+  font-variant:  normal;
+  text-transform:  none;
+  line-height:  1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing:  grayscale;  
+
+    }
+}
+html {
+  font-size: $rem-base;
+  @include media('small-screen') {
+    font-size:1.25vw;
+    // 10/1400 = .0069
+    // 18/1400 = .0125
+    // 18 * .30 30% increase is 5.4 pixels so ....
+    // 23/1440 0.0164
+    //$rem-base-lrg: 10px;
+
+  }
+}
+
+body {  
+  @extend %regular;
+  color: $c-offBlack;
+  line-height: 1.666;
+  //-webkit-font-smoothing:  antialiased;
+}
+
+a {
+  @extend %bold;
+  color: $c-offBlack;
+  text-decoration:  none;
+  transition:  opacity 100ms linear;
+  &:hover {
+    opacity: .66;
+  }
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h7,
+.h8
+ {
+  margin:0 0 .5rem 0;
+  text-transform: uppercase;
+  letter-spacing: .0575rem;
+  line-height:1.5;
+}
+
+h1, .h1 {
+  @include fontSize(24px);
+  @extend %bold;
+  letter-spacing: .15rem;
+}
+h2, .h2 {
+  @include fontSize(21px);
+  @extend %alt;
+  text-transform: none;
+}
+h3, .h3 {
+  @include fontSize(18px);
+  @extend %bold;
+}
+h4, .h4 {
+  @include fontSize(16px);
+  @extend %alt;  
+  text-transform: none;
+}
+h5, .h5 {
+  @include fontSize(12px);
+  @extend %bold;
+}
+h6, .h6 {
+  @include fontSize(11px);
+  @extend %bold;
+}
+.h7 {
+  @include fontSize(9px);
+  @extend %medium;
+}
+.h8 {
+  @include fontSize(8px);
+  @extend %bold;
+}
+p, .p1 {
+  margin: 0 0 1rem 0;
+  @include fontSize(18px);
+
+}
+.p1 {
+  text-align: justify;
+}
+.p2 {
+  @include fontSize(14px);
+  line-height:1.7;
+  @extend %medium;
+}
+.p3 {
+  @include fontSize(11px);
+  line-height:1.9;
+}
+.p4 {
+  @include fontSize(21px);
+  line-height:2.2;
+  @extend %medium;
+  letter-spacing: .0575rem;
+}
+
+footer a {
+  color: $c-offBlack;
+}

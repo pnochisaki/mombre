@@ -1,0 +1,36 @@
+{
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "rsync -r -v -e 'ssh -l deploy' --delete --no-perms ./build/ 50.116.3.62:/var/www/kellermannichocolate.com/html/"
+  },
+  "dependencies": {
+    "handlebars": "~4.0.4",
+    "metalsmith": "^1.7.0",
+    "metalsmith-collections": "~0.7.0",
+    "metalsmith-include": "0.0.2",
+    "metalsmith-layouts": "~1.4.2",
+    "metalsmith-markdown": "~0.2.1",
+    "metalsmith-metadata": "0.0.3",
+    "metalsmith-permalinks": "~0.4.0",
+    "metalsmith-to-json": "^0.1.7",
+    "metalsmith-writemetadata": "^0.4.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-favicons": "^2.2.7",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-metalsmith": "^1.1.0",
+    "gulp-minify": "^1.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

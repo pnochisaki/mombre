@@ -1,0 +1,46 @@
+
+/* ---------- Fonts ---------- */
+@import '../fonts/filosofiaitalic/style.css';
+
+/* ---------- Icomoon ---------- */
+// @import '../icomoon/style.scss';
+
+/* ---------- Normalize ---------- */
+//@import 'normalize/import-now';
+
+/* ---------- Variables ---------- */
+@import 'styles/variables';
+
+/* ---------- Functions ---------- */
+@import 'styles/funcs';
+
+/* ---------- Mixins ---------- */
+@import 'styles/mixins';
+
+/* ---------- Typography ---------- */
+@import 'styles/typography';
+
+/* ---------- Slick ---------- */
+@import 'vendor/slick';
+
+/* ---------- Hamburgers ---------- */
+//@import 'hamburgers/hamburgers';
+
+/* ---------- Global styles ---------- */
+@import 'styles/global';
+
+/* ---------- Modules ---------- */
+@import 'styles/modules/all';
+
+/* ---------- Layouts ---------- */
+@import 'styles/layout';
+
+/* ---------- Layouts ---------- */
+@import 'styles/overrides';
+
+/* ---------- Page styles ---------- */
+@import 'styles/pages/all';
+
+/* ---------- Block styles ---------- */
+@import 'styles/blocks/all';
+;

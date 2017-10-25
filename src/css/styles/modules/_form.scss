@@ -1,0 +1,16 @@
+form {}
+textarea
+ {
+  width:100%;
+  text-transform: none;
+  color:$c-gray;
+}
+button, 
+input[type='submit'] {
+  @include button;
+}
+
+.is-hidden {
+  display:none;
+}
+

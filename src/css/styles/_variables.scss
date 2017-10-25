@@ -1,0 +1,55 @@
+$breakpoints: (
+  'mini'				: ( max-width: 320px ),
+  'small-screen'       	: ( min-width: 769px ),
+  'large-screen'       	: ( min-width: 1201px ),
+  'short-screen'       	: ( max-height: 800px )
+);
+
+$rem-base: 4vw;
+$rem-base-mobile-adjusted: 20px; /*increase the divisor for the mixin fontSize on mobile to decreae font size without causing that annoying zoom on form input */
+$rem-base-lrg: 18px; /*this is also the divisor for the mixin fontSize*/
+
+
+//fonts
+
+%regular {
+font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+%medium {
+font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 500;
+}
+%bold {
+font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 700;
+}
+%alt {
+font-family: "filosita", serif;
+font-weight: 200;
+
+}
+%button {
+font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+%black {
+font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 900;
+}
+
+
+//colors
+$c-offBlack: #080808;
+$c-gray: #808080;
+$c-darkGray: #646464;
+$c-lightGray: #eaeaea;
+$c-extraLightGray: #FBFAFB;
+$c-offWhite: #FBFAFB;
+$c-white: #FFFFFF;
+

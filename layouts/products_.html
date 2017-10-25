@@ -1,0 +1,45 @@
+{{> header}} 
+<main>
+    <h1>{{title}}</h1>
+   {{{contents}}}
+
+    {{#if products}}
+
+    <section class="products">
+
+<hr><hr><hr>
+
+        {{#each groups}}
+        <article class="group" data-slug="{{slug}}">
+            <div>
+            <img src="{{imgS image}}" alt="{{title}}">
+                <h3>{{title}}</h3>
+                <p>{{teaser}}</p>         
+                <button>Shop Origins</button>
+            </div>
+        </article>
+        {{/each}}
+
+<hr><hr><hr>
+
+        {{#each products}}
+        <article id="product" data-shopify="{{shopify_id}}" >
+            <div>
+            <img src="{{imgS image}}" alt="{{title}}">
+                <h3>{{title}}</h3>
+                <pre id='product-component-{{shopify_id}}'>
+                    data-group="{{#each groups}}{{this}} {{/each}}"
+                    data-group="{{origin}}"
+                    data-type="{{type}}"
+                    data-shopify="{{shopify_id}}"
+                    data-order="{{order}}"
+                </pre>           
+                <a class="button" href="/{{path}}"><span>More Info</span></a>
+            </div>
+        </article>
+        {{/each}}
+    </section>
+    {{/if}}
+    
+</main>
+{{> footer}}

@@ -1,0 +1,70 @@
+{{> header}}
+<main class="people">
+
+	<h1>{{title}}</h1>
+	<div class="images">
+		<div class="desktop-image">
+			<img src="{{img image}}" alt="The People"/>
+		</div>
+	    <img src="{{imgS mobileimage}}" alt="Thomas, Chi and Armando" class="mobile-image">
+		<div class="header" id="bios-header">
+
+<div class="h1">{{headline}}</div>
+<div class="h4">{{subheadline}}</div>
+
+</div>
+	</div>
+	
+	<div class="people-wrapper" id="people">
+		{{#each people}}
+		<div class="person" data-index="{{inc @index}}">
+			<img src="{{imgS image}}" alt="{{title}}"/>
+			<div class="h3">{{title}}</div>
+			<div class="h4">{{position}}</div>
+			<p class="p1">{{{teaser}}} <a class="h5">Read More</a></p>
+			<a href="#bios-header" class="block-link expand-person"><span>Read more</span></a>
+			<a class="block-link expand-mobile"><span>Read more</span></a>
+			<div class="mobile-expanded">
+                <div 
+                class="cycle-slideshow"
+                data-cycle-fx="scrollHorz" 
+                data-cycle-slides="> p"
+                data-cycle-timeout=0
+                data-cycle-prev=".prev-{{inc @index}}"
+                data-cycle-next=".next-{{inc @index}}"
+                data-cycle-swipe="true"
+                data-cycle-pager-template="<span>&nbsp;</span>"
+                >
+					{{{contents}}}
+                <div class="cycle-pager"></div>                     
+                <a href="#" class="prev prev-{{inc @index}}"><span>prev</span></a>
+                <a href="#" class="next next-{{inc @index}}"><span>next</span></a>
+				</div>
+
+			</div>
+		</div>
+		{{/each}}
+	</div>
+
+	<div class="bio-wrapper" id="bios">
+		
+		<div class="bio-nav">
+			{{#each people}}
+				<a href="#bios-header" class="h6 bionav-{{inc @index}}" data-index="{{inc @index}}">{{title}}</a>
+ 			{{/each}}
+		</div>
+
+		<div class="bios">
+		  {{#each people}}
+				<div class="bio" id="bio-{{inc @index}}" data-index="{{inc @index}}">
+					<h2 class="h3">{{title}}</h2>
+					<h3 class="h4" class="position">{{position}}</h3>
+					<p>{{{contents}}}</p>
+				</div>
+		 	{{/each}}
+ 		</div>
+	</div> 
+
+
+</main>
+{{> footer}}

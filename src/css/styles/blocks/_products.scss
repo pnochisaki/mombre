@@ -1,0 +1,154 @@
+.products {
+	article {
+		@include media('small-screen') {
+			display: table;
+		}
+		background:linear-gradient(0deg, #f3f2f0, #fcfcfc);	
+		.image, .text {
+			@include media('small-screen') {
+				display:table-cell;
+				vertical-align: top;
+				width:50%;
+			}
+		}
+		.image {
+				padding:3rem 2.5rem;
+				text-align:center;
+				@include media('small-screen') {
+					padding-right:6rem;
+					text-align:right;
+				}
+			img {
+				width:auto;
+				height:36rem;
+				//box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+				box-shadow: 1rem 1.5rem 1.5rem rgba(0,0,0,0.2)
+			}
+		}
+		.text {
+			padding:2rem;
+			background:#fff;
+			@include media('small-screen') {
+				padding:12rem 10rem 2.5rem 4.5rem;
+				background:transparent;
+			}
+			.title {
+				// @extend .h1;				
+			}
+			.subhead {
+				// @extend .h2;
+			}
+			.originhead {
+				// @extend .h5;				
+				margin:1.5rem 0 0 0;
+			}
+			.teaser {
+				// @extend .p1;
+			}
+			.lowercase {
+				text-transform:lowercase;
+			}
+		}
+		.origins {
+			line-height: 1;
+			margin-bottom:1.5rem;
+			.origin {
+				&:after {
+					content:" | ";
+					opacity:.65;
+				}
+				&:last-child {
+					&:after { 
+						content:"";
+					}
+				}
+				a {
+					// @extend .h5;
+					opacity:.65;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				a.active {
+						opacity:1;
+				}
+			}
+		}
+		.button-bar {
+			position: relative;
+			margin-top:1rem;
+			.shopify-void {
+				//background:red;
+				display: inline-block;
+				.shopify-buy__product {
+					display:none;
+					&:last-child {
+						display: inline-block;
+					}
+				}
+			}
+			.origin-click {
+				@include media('small-screen') {
+					display:none;
+				}
+			}
+		}
+		.origins-nav {
+			display:none;
+			width:100%;
+			position:absolute;
+			bottom:3rem;
+			background:#fff;
+			padding:1.5rem;
+			box-shadow: 0 0 1rem rgba(0,0,0, .25); 			
+			&.active {
+				display:block
+			}	
+			.h4 {
+				margin:2rem 0 0 0;	
+			}					
+		}
+		.h1 {
+			margin:0;
+		}
+		.h3 {
+			margin:0;
+		}
+
+		ul {
+			margin:0;
+			padding:0;
+			list-style-type: none;
+			
+			li {
+				padding: 1rem 0;
+				border-bottom: 1px solid #000;
+				&:first-child {
+					border-top: 1px solid #000;
+				}
+				.h2 {
+					margin:0;
+				}
+			}
+		}
+		@include clearfix;
+	}
+	article:last-child {
+		background:linear-gradient(0deg, #f8f7f5, #ffffff);	
+		.image {
+			padding:0;
+			img {
+				box-shadow: none;
+				width:100%;
+				height:auto;				
+			}
+		}
+		.image,
+		.text {
+		}
+		.notes {
+			display: none;
+		}
+	}
+
+}
