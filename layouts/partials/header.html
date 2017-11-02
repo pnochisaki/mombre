@@ -25,7 +25,6 @@
         <a class="logo" href="/">
           {{#if site.logo}}
           <img src="{{site.logo}}" class="logo" alt="{{site.name}}" />
-          <img src="{{site.logo-mobile}}" class="logo-mobile" alt="{{site.name}}" />
           {{else}}
           <span>{{site.name}}</span>
           {{/if}}
@@ -34,16 +33,7 @@
       <button id="menuExpand">
         <img src="/images/hamburger.svg" alt="menu icon" />
       </button>
-      <button id="cartToggle">
-        <span>My Bag</span> <img src="/images/bag.svg" alt="bag icon" />
-        <span id="cartCount"></span>
-      </button>
       <nav class="navigation">
-        
-        <div class="mobile-header">
-          <img src="{{site.logo-mobile}}" class="logo-mobile" alt="{{site.name}}" />
-          <button class="plus" id="menuCollapse"><img src="/images/plus.svg" class="rotate-left" alt="{{site.name}}" /></button>
-        </div>
 
         <ul>
           {{#if pages}} {{#each pages}}
