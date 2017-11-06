@@ -1,0 +1,35 @@
+// .container {
+// 	margin: 1rem;
+//   	@include media('small-screen') {
+//     	margin: 1rem 20vw;
+//   	}
+// }
+.header {
+	@include clearfix;
+}
+.header > .brand {
+	float: left;
+	width:75%;
+	@include media('small-screen') {
+		width:100%;
+	}	
+}
+.header > button {
+	float: right;
+	width:25%;
+	border: 0;
+	margin:0;
+	@include media('small-screen') {
+		display: none;
+	}	
+}
+.header > nav {
+	@include clearfix;
+}
+
+.logo span {
+	@include media('small-screen') {
+		text-align: center;
+	}
+}
+

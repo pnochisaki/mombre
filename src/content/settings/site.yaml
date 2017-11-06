@@ -1,6 +1,5 @@
 name: Mombre
-logo: /images/logo.svg
-logo-mobile: /images/logo.svg
+logo: 
 baseurl: //mombre.com
 cloundinary: fiveten
 copyright: '© Mombre 2017. All Rights Reserved.'

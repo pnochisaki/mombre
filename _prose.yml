@@ -2,32 +2,7 @@ prose:
   ignore: [content/media]
   media: src/content/media
   rooturl: src/content
-  metadata:
-    src/content/groups:
-    - field: {element: text, label: Title}
-      name: title
-    - field: {element: text, label: Subheading}
-      name: subhead
-    - field: {element: text, label: Origin Heading}
-      name: originhead     
-    - field: {element: text, label: Origin Click Label (Mobile Only)}
-      name: originclick     
-    - field: {false: 'false', true: 'true', value: true, label: Published, help: Uncheck
-          to make this post hidden., element: checkbox}
-      name: published      
-    - field: {element: text, label: Slug}
-      name: slug
-    - field: {element: hidden, value: groups}
-      name: collection
-    - field: {element: number, help: Lower numbers appear left on the navigation.,
-        label: Order, type: number}
-      name: order
-    - field: {element: textarea, label: Teaser}
-      name: teaser
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Image, upload_preset: kellermanni}
-      name: image      
+  metadata:    
     src/content/pages:
     - field: {element: text, label: Title}
       name: title
@@ -40,12 +15,8 @@ prose:
       name: order  
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
         help: Select an image to upload,
-        label: Header Image, upload_preset: kellermanni}
-      name: image            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image, upload_preset: kellermanni}
-      name: mobileimage
+        label: Header Image, upload_preset: mombre}
+      name: image
     - field: {element: text, label: Headline}
       name: headline
     - field: {element: text, label: Sub Headline}
@@ -63,226 +34,42 @@ prose:
     - field: {element: number, help: Lower numbers appear left on the navigation.,
         label: Order, type: number}
       name: order  
-
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
         help: Select an image to upload,
-        label: Header Image 1, upload_preset: kellermanni}
+        label: Header Image, upload_preset: mombre}
       name: image1            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 1, upload_preset: kellermanni}
-      name: mobileimage1
-    - field: {element: text, label: Headline 1}
-      name: headline1
-    - field: {element: text, label: Sub Headline 1}
-      name: subheadline1
-    - field: {element: textarea, label: Teaser 1}
-      name: teaser1
-
-
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image 2, upload_preset: kellermanni}
-      name: image2            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 2, upload_preset: kellermanni}
-      name: mobileimage2
-    - field: {element: text, label: Headline 2}
-      name: headline2
-    - field: {element: text, label: Sub Headline 2}
-      name: subheadline2
-    - field: {element: textarea, label: Teaser 2}
-      name: teaser2
-
-
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image 3, upload_preset: kellermanni}
-      name: image3            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 3, upload_preset: kellermanni}
-      name: mobileimage3
-    - field: {element: textarea, label: Pre-teaser 3}
-      name: pre-teaser3
-    - field: {element: text, label: Headline 3}
-      name: headline3
-    - field: {element: text, label: Sub Headline 3}
-      name: subheadline3
-    - field: {element: textarea, label: Teaser 3}
-      name: teaser3
-
-    # - field: {element: area, label: Overlay Text 3}
-    #   name: overlay3
-    # - field: {element: textarea, label: Copy 1}
-    #   name: copy1
-    # - field: {element: textarea, label: Copy 2}
-    #   name: copy2
-    # - field: {element: textarea, label: Copy 3}
-    #   name: copy3
-    # - field: {element: textarea, label: Copy 4}
-    #   name: copy4
-
-    src/content/pages/extravirgin-chocolate.md:
-    - field: {element: text, label: Title}
-      name: title
-    - field: {element: hidden, value: page.html}
-      name: layout
-    - field: {element: hidden, value: pages}
-      name: collection
-    - field: {element: number, help: Lower numbers appear left on the navigation.,
-        label: Order, type: number}
-      name: order  
-
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image 1, upload_preset: kellermanni}
-      name: image1            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 1, upload_preset: kellermanni}
-      name: mobileimage1
-    - field: {element: text, label: Headline 1}
-      name: headline1
-    - field: {element: text, label: Sub Headline 1}
-      name: subheadline1
-    - field: {element: textarea, label: Teaser 1}
-      name: teaser1
-
-
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image 2, upload_preset: kellermanni}
-      name: image2            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 2, upload_preset: kellermanni}
-      name: mobileimage2
-    - field: {element: textarea, label: Pre-teaser 2}
-      name: pre-teaser2      
-    - field: {element: text, label: Headline 2}
-      name: headline2
-    - field: {element: text, label: Sub Headline 2}
-      name: subheadline2
-
-
-    - field: {element: textarea, label: Copy 1}
-      name: copy2_1
-    - field: {element: textarea, label: Copy 2}
-      name: copy2_2
-    - field: {element: textarea, label: Copy 3}
-      name: copy2_3
-    - field: {element: textarea, label: Copy 4}
-      name: copy2_4
-
-
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image 3, upload_preset: kellermanni}
-      name: image3            
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Header Image 3, upload_preset: kellermanni}
-      name: mobileimage3
-    - field: {element: textarea, label: Pre-teaser 3}
-      name: pre-teaser3
-    - field: {element: text, label: Headline 3}
-      name: headline3
-    - field: {element: text, label: Sub Headline 3}
-      name: subheadline3
-
-
-    - field: {element: textarea, label: Copy 1}
-      name: copy3_1
-    - field: {element: textarea, label: Copy 2}
-      name: copy3_2
-    - field: {element: textarea, label: Copy 3}
-      name: copy3_3
-    - field: {element: textarea, label: Copy 4}
-      name: copy3_4
-
-
-    src/content/products:
-    - field: {element: text, label: Title}
-      name: title
-    - field: {element: hidden, value: product.html}
-      name: layout
-    - field: {element: hidden, value: products}
-      name: collection
-    - field: {false: 'false', true: 'true', value: true, label: Published, help: Uncheck
-          to make this post hidden., element: checkbox}
-      name: published
-    - field: {element: number, help: Assign cardinality,
-        label: Order, type: number}
-      name: order
-    - field: {element: text, help: Enter the ID from shopify,
-        label: Shopify ID,}
-      name: shopify_id
-    - field: {element: number, help: 'Format: 0.00',
-        label: Price, type: number}
-      name: price
-    - field: {element: text, label: Notes}
-      name: notes    
-    - field: {element: text, label: Tasting Notes}
-      name: tasting_notes    
+    - field: {element: text, label: Headline}
+      name: headline
+    - field: {element: text, label: Sub Headline}
+      name: subheadline
     - field: {element: textarea, label: Teaser}
       name: teaser
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Image, upload_preset: kellermanni}
-      name: image        
-    - field:
-        element: multiselect
-        label: Groups
-        options:
-        - {name: Dark, value: dark}
-        - {name: Milk, value: milk}
-        - {name: Dark Milk, value: darkmilk}
-        - {name: Neapolitan, value: neapolitan}
-        - {name: Holiday, value: holiday}
-        - {name: Gift Sets, value: gifts}
-        placeholder: Choose one
-      name: groups
-    - field:
-        element: select
-        label: Origin
-        options:
-        - {name: Ecuador, value: ecuador}
-        - {name: Peru, value: peru}
-        - {name: Madagascar, value: madagascar}
-        - {name: Nicaragua, value: nicaragua}
-        - {name: Milk Winter Spice, value: Milk Winter Spice}
-        - {name: Dark Peppermint, value: Dark Peppermint}
-        - {name: All Dark (Gift Box), value: Dark}
-        - {name: All Milk (Gift Box), value: Milk}
-        - {name: Dark + Milk (Gift Box), value: Dark + Milk}
-        - {name: Ecuadorian Sampler (Gift Box), value: Ecuadorian}
-        - {name: Holiday (Gift Box), value: Holiday}
-        placeholder: Choose one origin to associate with this product
-      name: origin   
-    src/content/people:
+      
+    src/content/posts:
     - field: {element: text, label: Title}
       name: title
-    - field: {element: hidden, value: page.html}
+    - field: {element: hidden, value: post.html}
       name: layout
-    - field: {element: hidden, value: people}
+    - field: {element: hidden, value: posts}
       name: collection
     - field: {false: 'false', true: 'true', value: true, label: Published, help: Uncheck
           to make this post hidden., element: checkbox}
-      name: published
-    - field: {element: number, help: Assign cardinality,
-        label: Order, type: number}
-      name: order
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Image, upload_preset: kellermanni}
-      name: image
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Mobile Image, upload_preset: kellermanni}
-      name: mobileImage             
-    - field: {element: text, label: Position}
-      name: position
-    - field: {element: textarea, label: Teaser}
-      name: teaser            
+      name: published      
+    - field:
+        element: multiselect
+        label: Tags
+        options:
+        - {name: Tag 1, value: tag-1}
+        - {name: Tag 2, value: tag-2}
+        - {name: Tag 3, value: tag-3}
+        placeholder: Choose one
+      name: tags
+    - field:
+        element: select
+        label: Category
+        options:
+        - {name: Tag 1, value: tag-1}
+        - {name: Tag 2, value: tag-2}
+        - {name: Tag 3, value: tag-3}
+        placeholder: Choose one Category
+      name: categories   
