@@ -5,7 +5,7 @@ function plugin(){
     setImmediate(done);
     Object.keys(files).forEach(function(file){
       var data = files[file];
-      if (data.published!=true && (data.collection=='products' || data.collection=='groups')) delete files[file];
+      if (data.published!=true && (data.collection=='posts' || data.collection=='pages')) delete files[file];
     });
   };
 }
