@@ -1,6 +1,9 @@
 {{> header}}
 <main>
  	<h1>{{title}}</h1>
+    {{#if image}}
+        <img src="{{imgS image}}" alt="{{title}}">
+    {{/if}}    	
    <div class="content">{{{contents}}}</div>
 </main>
 {{> footer}}

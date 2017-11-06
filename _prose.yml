@@ -15,31 +15,31 @@ prose:
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
         help: Select an image to upload, label: Header Image, upload_preset: mombre}
       name: image
-    - field: {element: text, label: Headline}
-      name: headline
-    - field: {element: text, label: Sub Headline}
-      name: subheadline
-    - field: {element: textarea, label: Teaser}
-      name: teaser
-    src/content/pages/home.md:
-    - field: {element: text, label: Title}
-      name: title
-    - field: {element: hidden, value: page.html}
-      name: layout
-    - field: {element: hidden, value: pages}
-      name: collection
-    - field: {element: number, help: Lower numbers appear left on the navigation.,
-        label: Order, type: number}
-      name: order
-    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload, label: Header Image, upload_preset: mombre}
-      name: image1
-    - field: {element: text, label: Headline}
-      name: headline
-    - field: {element: text, label: Sub Headline}
-      name: subheadline
-    - field: {element: textarea, label: Teaser}
-      name: teaser
+    # - field: {element: text, label: Headline}
+    #   name: headline
+    # - field: {element: text, label: Sub Headline}
+    #   name: subheadline
+
+    # src/content/pages/home.md:
+    # - field: {element: text, label: Title}
+    #   name: title
+    # - field: {element: hidden, value: page.html}
+    #   name: layout
+    # - field: {element: hidden, value: pages}
+    #   name: collection
+    # - field: {element: number, help: Lower numbers appear left on the navigation.,
+    #     label: Order, type: number}
+    #   name: order
+    # - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
+    #     help: Select an image to upload, label: Header Image, upload_preset: mombre}
+    #   name: image1
+    # - field: {element: text, label: Headline}
+    #   name: headline
+    # - field: {element: text, label: Sub Headline}
+    #   name: subheadline
+    # - field: {element: textarea, label: Teaser}
+    #   name: teaser
+    
     src/content/posts:
     - field: {element: text, label: Title}
       name: title
