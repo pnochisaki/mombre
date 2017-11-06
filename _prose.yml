@@ -44,7 +44,7 @@ prose:
       name: subheadline
     - field: {element: textarea, label: Teaser}
       name: teaser
-      
+
     src/content/posts:
     - field: {element: text, label: Title}
       name: title
@@ -54,7 +54,11 @@ prose:
       name: collection
     - field: {false: 'false', true: 'true', value: true, label: Published, help: Uncheck
           to make this post hidden., element: checkbox}
-      name: published      
+      name: published
+    - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
+        help: Select an image to upload,
+        label: Header Image, upload_preset: mombre}
+      name: image      
     - field:
         element: multiselect
         label: Tags
