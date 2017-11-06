@@ -1,6 +1,6 @@
 ---
 collection: posts
-layout: page.html
+layout: post.html
 published: false
 order: 1
 title: The title of the first post

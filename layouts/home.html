@@ -9,8 +9,10 @@
         {{#each posts}}
         <article >
             <div>
-                <h3>{{title}}</h3>
-                <img src="{{imgS image}}" alt="{{title}}">
+                <h2>{{title}}</h2>
+                {{#if image}}
+                    <img src="{{imgS image}}" alt="{{title}}">
+                {{/if}}    
                 {{{contents}}}
             </div>
         </article>
