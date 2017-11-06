@@ -7,7 +7,7 @@ $breakpoints: (
 
 $rem-base: 4vw;
 $rem-base-mobile-adjusted: 20px; /*increase the divisor for the mixin fontSize on mobile to decreae font size without causing that annoying zoom on form input */
-$rem-base-lrg: 18px; /*this is also the divisor for the mixin fontSize*/
+$rem-base-lrg: 16px; /*this is also the divisor for the mixin fontSize*/
 
 
 //fonts
@@ -28,7 +28,7 @@ font-style: normal;
 font-weight: 700;
 }
 %alt {
-font-family: "filosita", serif;
+font-family: "Times New Roman", serif;
 font-weight: 200;
 
 }
