@@ -5,6 +5,3 @@ order: 0
 title: Home
 published: true
 ---
-
-Howdy ho
-

@@ -1,8 +1,7 @@
 prose:
   ignore: [content/media]
   media: src/content/media
-  rooturl: src/content
-  metadata:    
+  metadata:
     src/content/pages:
     - field: {element: text, label: Title}
       name: title
@@ -12,10 +11,9 @@ prose:
       name: collection
     - field: {element: number, help: Lower numbers appear left on the navigation.,
         label: Order, type: number}
-      name: order  
+      name: order
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image, upload_preset: mombre}
+        help: Select an image to upload, label: Header Image, upload_preset: mombre}
       name: image
     - field: {element: text, label: Headline}
       name: headline
@@ -23,7 +21,6 @@ prose:
       name: subheadline
     - field: {element: textarea, label: Teaser}
       name: teaser
-
     src/content/pages/home.md:
     - field: {element: text, label: Title}
       name: title
@@ -33,18 +30,16 @@ prose:
       name: collection
     - field: {element: number, help: Lower numbers appear left on the navigation.,
         label: Order, type: number}
-      name: order  
+      name: order
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image, upload_preset: mombre}
-      name: image1            
+        help: Select an image to upload, label: Header Image, upload_preset: mombre}
+      name: image1
     - field: {element: text, label: Headline}
       name: headline
     - field: {element: text, label: Sub Headline}
       name: subheadline
     - field: {element: textarea, label: Teaser}
       name: teaser
-
     src/content/posts:
     - field: {element: text, label: Title}
       name: title
@@ -52,13 +47,12 @@ prose:
       name: layout
     - field: {element: hidden, value: posts}
       name: collection
-    - field: {false: 'false', true: 'true', value: true, label: Published, help: Uncheck
-          to make this post hidden., element: checkbox}
+    - field: {false: 'false', true: 'true', help: Uncheck to make this post hidden.,
+        value: true, element: checkbox, label: Published}
       name: published
     - field: {api_key: 764947189999699, cloud_name: fiveten, element: cloudinary,
-        help: Select an image to upload,
-        label: Header Image, upload_preset: mombre}
-      name: image      
+        help: Select an image to upload, label: Header Image, upload_preset: mombre}
+      name: image
     - field:
         element: multiselect
         label: Tags
@@ -76,4 +70,5 @@ prose:
         - {name: Tag 2, value: tag-2}
         - {name: Tag 3, value: tag-3}
         placeholder: Choose one Category
-      name: categories   
+      name: categories
+  rooturl: src/content
