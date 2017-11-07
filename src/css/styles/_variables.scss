@@ -5,7 +5,7 @@ $breakpoints: (
   'short-screen'       	: ( max-height: 800px )
 );
 
-$rem-base: 4vw;
+$rem-base: 5vw;
 $rem-base-mobile-adjusted: 20px; /*increase the divisor for the mixin fontSize on mobile to decreae font size without causing that annoying zoom on form input */
 $rem-base-lrg: 16px; /*this is also the divisor for the mixin fontSize*/
 

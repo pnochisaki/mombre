@@ -19,12 +19,7 @@
 html {
   font-size: $rem-base;
   @include media('small-screen') {
-    font-size:1.25vw;
-    // 10/1400 = .0069
-    // 18/1400 = .0125
-    // 18 * .30 30% increase is 5.4 pixels so ....
-    // 23/1440 0.0164
-    //$rem-base-lrg: 10px;
+    font-size: $rem-base-lrg;
 
   }
 }
