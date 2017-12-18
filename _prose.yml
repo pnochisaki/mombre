@@ -66,9 +66,11 @@ prose:
         element: select
         label: Category
         options:
-        - {name: Tag 1, value: tag-1}
-        - {name: Tag 2, value: tag-2}
-        - {name: Tag 3, value: tag-3}
+        - {name: Wolfisaki’s Go On Tour, value: on-tour}
+        - {name: Annual Christmas Card, value: christmas-card}
+        - {name: Best of List, value: best-of}
+        - {name: Mommying My Face Off, value: mommying-face-off}
+        - {name: Urban Zen Master, value: urban-zeen-master}
         placeholder: Choose one Category
       name: categories
   rooturl: src/content
