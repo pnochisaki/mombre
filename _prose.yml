@@ -55,15 +55,6 @@ prose:
       name: image
     - field:
         element: multiselect
-        label: Tags
-        options:
-        - {name: Tag 1, value: tag-1}
-        - {name: Tag 2, value: tag-2}
-        - {name: Tag 3, value: tag-3}
-        placeholder: Choose one
-      name: tags
-    - field:
-        element: select
         label: Category
         options:
         - {name: Wolfisaki’s Go On Tour, value: on-tour}
