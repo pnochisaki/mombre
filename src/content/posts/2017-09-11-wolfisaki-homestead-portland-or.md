@@ -3,7 +3,7 @@ collection: posts
 layout: post.html
 published: true
 title: 'Day 1: Wolfisaki Homestead, Portland OR'
-date: 'Sun Sep 10 2017 17:00:00 GMT-0700 (PDT)'
+date: '2017-09-11'
 image: mombre/zlfpcblvf4gmuacocx00
 ---
 It's 5am on the day we load up the rig and go live out along the Pacific Coast Highway (and probably the odd Walgreens parking lot) for the next couple of months...

@@ -88,7 +88,7 @@ handlebars.registerHelper('each_group', function(ary, group, options) {
 });
 
 handlebars.registerHelper("df", function(value) {
-  return moment(value).add(1, 'days').format("MMMM Do, Y");
+  return moment(value).format("MMMM Do, Y");
 });
 
 var browserSync   = require('browser-sync').create();
