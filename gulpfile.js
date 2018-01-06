@@ -24,6 +24,7 @@ var tojson        = require('metalsmith-to-json');
 var writemetadata = require('metalsmith-writemetadata');
 
 var handlebars    = require('handlebars');
+var moment        = require('moment');
 var _             = require('lodash');
 
 var published     = require('./metalsmith-published.js');
@@ -86,6 +87,9 @@ handlebars.registerHelper('each_group', function(ary, group, options) {
   return result.join('');
 });
 
+handlebars.registerHelper("df", function(value) {
+  return moment(value).add(1, 'days').format("MMMM Do, Y");
+});
 
 var browserSync   = require('browser-sync').create();
 var reload        = browserSync.reload;
@@ -144,6 +148,7 @@ gulp.task("concatJs", function() {
         'src/scripts/vendor/vue.min.js',
         //'src/scripts/vendor/cash.min.js',
         'src/scripts/vendor/axios.min.js',
+        'src/scripts/vendor/moment.min.js',
         'src/scripts/vendor/jquery.cycle2.min.js',
         'src/scripts/vendor/jquery.cycle2.swipe.min.js',
         // 'src/scripts/vendor/slick.min.js',
@@ -299,7 +304,7 @@ gulp.task('jsonindexes', function() {
     }))
     .pipe(gulp.dest('build/json'));
 });
-
+  
 
 gulp.task('imagemin', () =>
     gulp.src('src/content/media/*')

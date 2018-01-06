@@ -3,6 +3,7 @@ collection: posts
 layout: post.html
 published: true
 title: 'Still Day 1: Wolfisaki Homestead, Portland OR'
+date: 2017-09-11
 categories:
   - on-tour
 image: mombre/rb4noxdgjllehundghf4
