@@ -218,7 +218,8 @@ gulp.task('metalsmith', function() {
 
         collections({
           posts: {
-            sortBy: 'order',
+            sortBy: 'date',
+            reverse: true,
             pattern: '/posts/*.md'
           },
           pages: {
