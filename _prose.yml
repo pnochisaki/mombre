@@ -43,7 +43,7 @@ prose:
     src/content/posts:
     - field: {element: text, label: Title}
       name: title
-    - field: {element: text, label: Date, help: Format: '0000-00-00'}
+    - field: {element: text, label: Date, help: 'Format: 0000-00-00'}
       name: date
     - field: {element: hidden, value: post.html}
       name: layout
