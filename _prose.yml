@@ -1,6 +1,6 @@
 prose:
   ignore: [content/media]
-  media: src/content/media
+  media: content/media
   metadata:
     src/content/pages:
     - field: {element: text, label: Title}
