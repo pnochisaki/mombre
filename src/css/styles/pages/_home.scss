@@ -1,9 +1,0 @@
-.home {
-	.header-image-container:nth-of-type(3) .pre-teaser {
-		background: $c-lightGray;
-		display:none;
-		@include media('small-screen') {
-			display:block;
-		}
-	}
-}

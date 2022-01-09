@@ -1,9 +1,0 @@
-@function remCalc($size) {
-  $remSize: $size / $rem-base-lrg;
-  @return #{$remSize}rem;
-}
-
-@function mobileRemCalc($size) {
-  $remSizeMobile: $size / $rem-base-mobile-adjusted;
-  @return #{$remSizeMobile}rem;
-}
